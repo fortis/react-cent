@@ -9,5 +9,5 @@ before_install:
   - "npm install react prop-types"
 after_success:
   - npm run test:coverage
-  - cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
+  - coveralls < coverage/lcov.info
   - rm -rf ./coverage
