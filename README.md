@@ -14,12 +14,12 @@ Source can be loaded via [npm](https://www.npmjs.com/package/react-cent), or [do
 
 ```
 # npm package
-$ npm install react-cent
+$ npm install react-cent --save
 ```
 
 ### Usage
 
-##### Add provider
+#### Add provider
 ```jsx harmony
   const config = {
     url: 'http://localhost:8000/connection',
@@ -38,7 +38,7 @@ $ npm install react-cent
   )
 ```
 
-##### Handle messages
+#### Handle messages
 ```jsx harmony
 import React from 'react'
 import { cent } from 'react-cent'
