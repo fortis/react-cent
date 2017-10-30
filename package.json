@@ -1,0 +1,77 @@
+{
+  "name": "react-cent",
+  "homepage": "https://github.com/fortis/react-cent",
+  "description": "Mail.ru Centrifuge integration component.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alan Bondarchuk",
+    "email": "imacoda@gmail.com",
+    "url": "https://github.com/fortis/react-cent"
+  },
+  "bugs": {
+    "url": "https://github.com/fortis/react-cent/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^0.14.0 || ^15.0.0"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && babel src --out-dir dist/",
+    "clean": "rimraf dist && mkdirp dist",
+    "test": "BABEL_ENV=development jest --no-cache",
+    "test:coverage": "BABEL_ENV=development jest --no-cache --coverage",
+    "test:lint": "standard ./src --parser babel-eslint",
+    "test:watch": "BABEL_ENV=development jest --no-cache --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fortis/react-cent.git"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "19.0.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-register": "6.24.1",
+    "centrifuge": "^1.4.6",
+    "coveralls": "^2.11.12",
+    "enzyme": "2.8.2",
+    "jest": "19.0.2",
+    "jest-cli": "19.0.2",
+    "mkdirp": "0.5.1",
+    "prop-types": "^15.6.0",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "rimraf": "2.6.1",
+    "sinon": "^2.2.0",
+    "standard": "^10.0.3",
+    "yargs": "7.0.2"
+  },
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "testMatch": [
+      "**/?(*.)(spec|test).js?(x)"
+    ]
+  },
+  "keywords": [
+    "cent",
+    "centrifugo",
+    "centrifuge",
+    "centrifuge-js",
+    "socket",
+    "socketjs",
+    "websocket",
+    "react",
+    "reactjs"
+  ],
+  "license": "MIT"
+}
