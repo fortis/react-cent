@@ -1,4 +1,6 @@
 # react-cent
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/fortis/react-cent.svg)](https://greenkeeper.io/)
 Mail.ru Centrifuge integration component
 
 <p align="center">
