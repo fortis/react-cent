@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import CentProvider from '../src/CentProvider'
 
 describe('CentProvider', () => {
-  const config = {url: ''}
+  const config = {url: 'http://localhost:8000/connect', insecure: true}
 
   it('should throw Exception if the `url` ' +
     'is not provided in the configuration', () => {
@@ -14,7 +14,7 @@ describe('CentProvider', () => {
   })
 
   it('should provide `cent` context', () => {
-    const wrapper = new CentProvider(config)
+    const wrapper = new CentProvider({config})
     expect(wrapper.getChildContext().cent.constructor.name).toBe('Centrifuge')
     expect(CentProvider.childContextTypes.cent).toBe(PropTypes.object.isRequired)
   })
@@ -22,7 +22,7 @@ describe('CentProvider', () => {
   it('should render children', () => {
     const div = React.createFactory('div')
     const children = React.createElement(div)
-    const wrapper = new CentProvider({...config, children})
+    const wrapper = new CentProvider({config, children})
     const render = wrapper.render()
     expect(render).toBe(children)
   })
