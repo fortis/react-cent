@@ -2,7 +2,7 @@
   "name": "react-cent",
   "homepage": "https://github.com/fortis/react-cent",
   "description": "Mail.ru Centrifuge integration component.",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "readme": "README.md",
   "author": {
     "name": "Alan Bondarchuk",
