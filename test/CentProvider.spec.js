@@ -10,7 +10,7 @@ describe('CentProvider', () => {
 
   it('should throw Exception if the `url` ' +
     'is not provided in the configuration', () => {
-    expect(new CentProvider({})).toThrow()
+    expect(() => { CentProvider({}) }).toThrow()
   })
 
   it('should provide `cent` context', () => {
