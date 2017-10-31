@@ -16,7 +16,9 @@
   "deprecated": false,
   "peerDependencies": {
     "prop-types": "^15.6.0",
-    "react": "^0.14.0 || ^15.0.0"
+    "react": "^0.14.0 || ^15.0.0",
+    "sockjs": "^0.3.19",
+    "centrifuge": "^1.4.6"
   },
   "main": "dist/index.js",
   "scripts": {
@@ -41,6 +43,7 @@
     "babel-preset-stage-0": "6.24.1",
     "babel-register": "6.26.0",
     "centrifuge": "^1.4.6",
+    "sockjs": "^0.3.19",
     "coveralls": "^3.0.0",
     "enzyme": "3.1.0",
     "jest": "21.2.1",
