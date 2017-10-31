@@ -21,14 +21,15 @@ $ npm install react-cent --save
 
 ### Usage
 
-#### Add provider
-```jsx harmony
-  const config = {
-    url: 'http://localhost:8000/connection',
-    insecure: true
-  }
+**Add provider**
 
-  ReactDOM.render(
+```jsx harmony
+const config = {
+    url: 'http://localhost:8000/connection/websocket',
+    insecure: true, // not recommended
+}
+
+ReactDOM.render(
     <Provider store={store}>
       <CentProvider config={config}>
         <Router>
@@ -37,10 +38,11 @@ $ npm install react-cent --save
       </CentProvider>
     </Provider>,
     document.getElementById('app')
-  )
+)
 ```
 
-#### Handle messages
+**Handle messages**
+
 ```jsx harmony
 import React from 'react'
 import { cent } from 'react-cent'
@@ -58,5 +60,26 @@ export class SiteMetrics extends React.Component {
         console.log('history' , history.data)
       })
     }
+}
+
+
+```
+#### SockJS library (optional)
+
+**Install package**
+```npm
+npm install sockjs-client --save
+```
+
+**Update provider configuration**
+```jsx harmony
+import SockJS from 'sockjs-client'
+
+const config = {
+    // Change connection url.
+    url: 'http://localhost:8000/connection',
+    // Add SockJS client option.  
+    sockJS: SockJS,
+    // ...
 }
 ```

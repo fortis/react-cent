@@ -2,7 +2,7 @@
   "name": "react-cent",
   "homepage": "https://github.com/fortis/react-cent",
   "description": "Mail.ru Centrifuge integration component.",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "readme": "README.md",
   "author": {
     "name": "Alan Bondarchuk",
@@ -17,8 +17,7 @@
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^0.14.0 || ^15.0.0",
-    "centrifuge": "^1.4.6",
-    "sockjs-client": "^1.1.4"
+    "centrifuge": "^1.4.6"
   },
   "main": "dist/index.js",
   "scripts": {
@@ -43,7 +42,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "centrifuge": "^1.4.6",
-    "sockjs-client": "^1.1.4",
     "coveralls": "^3.0.0",
     "enzyme": "^3.1.0",
     "jest": "^21.2.1",

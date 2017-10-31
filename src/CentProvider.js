@@ -1,6 +1,5 @@
 import React, { Children } from 'react'
 import PropTypes from 'prop-types'
-import SockJS from 'sockjs-client'
 import Centrifuge from 'centrifuge'
 
 export default class CentProvider extends React.Component {
@@ -26,11 +25,7 @@ export default class CentProvider extends React.Component {
 
   constructor (props, context) {
     super(props, context)
-
-    this.cent = new Centrifuge({
-      ...this.props.config,
-      sockJS: SockJS
-    })
+    this.cent = new Centrifuge(this.props.config)
   }
 
   componentDidMount = () => {
