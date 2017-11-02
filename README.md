@@ -19,9 +19,12 @@ npm install react-cent --save
 
 ## Usage
 
+See configuration parameters in centrifuge-js [documentation](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#configuration-parameters)
+
 Add provider:
 
 ```jsx harmony
+
 const config = {
     url: 'http://localhost:8000/connection/websocket',
     insecure: true, // not recommended
