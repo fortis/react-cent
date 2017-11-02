@@ -53,10 +53,18 @@ export class SiteMetrics extends React.Component {
 
       // Subscribe on `site-metrics` channel.
       this.props.cent.subscribe('site-metrics', message => {
-        console.log('new message', message.data)
+        this.handleMessage(message)
       }).history().then(history => {
-        console.log('history' , history.data)
+        this.handleHistory(history)
       })
+    }
+    
+    handleMessage(message) {
+      console.log('message', message.data)
+    }
+    
+    handleHistory(history) {
+      console.log('history' , history.data)
     }
 }
 
