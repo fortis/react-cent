@@ -1,17 +1,29 @@
 {
   "name": "react-cent",
   "homepage": "https://github.com/fortis/react-cent",
-  "description": "Mail.ru Centrifuge integration component.",
+  "description": "React Component to make realtime apps with React simply. Provides integration with Centrifugo. ",
   "version": "1.0.11",
   "readme": "README.md",
   "author": {
     "name": "Alan Bondarchuk",
     "email": "imacoda@gmail.com",
-    "url": "https://github.com/fortis/react-cent"
+    "url": "https://github.com/fortis"
   },
   "bugs": {
     "url": "https://github.com/fortis/react-cent/issues"
   },
+  "keywords": [
+    "react",
+    "react-cent",
+    "cent",
+    "socket",
+    "socketjs",
+    "websocket",
+    "reactjs",
+    "centrifugo",
+    "centrifuge",
+    "centrifuge-js"
+  ],
   "bundleDependencies": false,
   "deprecated": false,
   "peerDependencies": {
@@ -64,16 +76,5 @@
       "**/?(*.)(spec|test).js?(x)"
     ]
   },
-  "keywords": [
-    "cent",
-    "centrifugo",
-    "centrifuge",
-    "centrifuge-js",
-    "socket",
-    "socketjs",
-    "websocket",
-    "react",
-    "reactjs"
-  ],
   "license": "MIT"
 }
