@@ -20,14 +20,17 @@ npm install react-cent --save
 ## Usage
 
 See configuration parameters in centrifuge-js [documentation](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#configuration-parameters)
-
+You can disable token authentication with `insecure: true` config parameter, but this mode is mostly for personal and demonstration uses.
 Add provider:
 
 ```jsx harmony
 
 const config = {
     url: 'http://localhost:8000/connection/websocket',
-    insecure: true, // not recommended
+    insecure: true, 
+    // user: 'USER ID',
+    // timestamp: 'UNIX TIMESTAMP',
+    // token: 'TOKEN',
 }
 
 ReactDOM.render(
