@@ -19,7 +19,10 @@ npm install react-cent --save
 
 ## Usage
 
-You can disable token authentication with `insecure: true` config parameter, but this mode is mostly for personal and demonstration uses.
+You can disable token authentication with `insecure: true` parameter, but this mode is mostly for personal and demonstration uses.
+
+All configuration parameters are described in centrifuge-js [documentation](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#configuration-parameters)
+
 Add provider:
 
 ```jsx harmony
