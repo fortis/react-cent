@@ -17,13 +17,12 @@ Mail.ru Centrifuge integration component
 Source can be loaded via [npm](https://www.npmjs.com/package/react-cent), or [downloaded](https://github.com/fortis/react-cent/archive/master.zip) from github repo.
 
 ```
-# npm package
-$ npm install react-cent --save
+npm install react-cent --save
 ```
 
 ### Usage
 
-**Add provider**
+Add provider
 
 ```jsx harmony
 const config = {
@@ -43,7 +42,7 @@ ReactDOM.render(
 )
 ```
 
-**Handle messages**
+Handle messages
 
 ```jsx harmony
 import React from 'react'
@@ -68,12 +67,12 @@ export class SiteMetrics extends React.Component {
 ```
 #### SockJS library (optional)
 
-**Install package**
+Install package
 ```npm
 npm install sockjs-client --save
 ```
 
-**Update provider configuration**
+Update provider configuration
 ```jsx harmony
 import SockJS from 'sockjs-client'
 
