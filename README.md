@@ -19,7 +19,6 @@ npm install react-cent --save
 
 ## Usage
 
-See configuration parameters in centrifuge-js [documentation](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#configuration-parameters)
 You can disable token authentication with `insecure: true` config parameter, but this mode is mostly for personal and demonstration uses.
 Add provider:
 
@@ -27,7 +26,7 @@ Add provider:
 
 const config = {
     url: 'http://localhost:8000/connection/websocket',
-    insecure: true, 
+    insecure: true, // disable token auth
     // user: 'USER ID',
     // timestamp: 'UNIX TIMESTAMP',
     // token: 'TOKEN',
@@ -73,9 +72,8 @@ export class SiteMetrics extends React.Component {
       console.log('history' , history.data)
     }
 }
-
-
 ```
+
 ## SockJS (optional)
 
 Install package
@@ -91,13 +89,18 @@ const config = {
     // Change connection url.
     url: 'http://localhost:8000/connection',
     // Add SockJS client option.  
-    sockJS: SockJS,
-    // ...
+    sockJS: SockJS
 }
 ```
 
+### Documentation
+* [Javascript browser client](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html)
+* [Configuration parameters](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#configuration-parameters)
+* [Subscriptions](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#subscriptions)
+* [SockJS](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#sockjs)
+
 ## Building & Testing
 
-* source can be loaded via [npm](https://www.npmjs.com/package/react-cent), or [downloaded](https://github.com/fortis/react-cent/archive/master.zip) from github repo.
+*  source can be loaded via [npm](https://www.npmjs.com/package/react-cent), or [downloaded](https://github.com/fortis/react-cent/archive/master.zip) from github repo.
 * `npm run build` to build
 * `npm test` to run tests
