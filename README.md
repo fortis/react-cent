@@ -4,7 +4,7 @@ Mail.ru Centrifuge integration component
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-cent"><img alt="npm version" src="https://img.shields.io/npm/v/react-cent.svg?style=flat-square"></a>
-  [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fortis/react-cent/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fortis/react-cent/?branch=master)
+  <a href="https://scrutinizer-ci.com/g/fortis/react-cent"><img alt="Scrutinizer Code Quality" src="https://scrutinizer-ci.com/g/fortis/react-cent/badges/quality-score.png?b=master"/></a>
   <a href="https://travis-ci.org/fortis/react-cent"><img src="https://travis-ci.org/fortis/react-cent.svg?branch=master" alt="travis-ci status"></a>
   <a href="https://coveralls.io/github/fortis/react-cent"><img src="https://coveralls.io/repos/github/fortis/react-cent/badge.svg" alt="coverage status"></a>
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
