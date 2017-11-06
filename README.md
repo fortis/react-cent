@@ -4,15 +4,16 @@ Mail.ru Centrifuge integration component
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-cent"><img alt="npm version" src="https://img.shields.io/npm/v/react-cent.svg?style=flat-square"></a>
+  [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fortis/react-cent/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fortis/react-cent/?branch=master)
   <a href="https://travis-ci.org/fortis/react-cent"><img src="https://travis-ci.org/fortis/react-cent.svg?branch=master" alt="travis-ci status"></a>
   <a href="https://coveralls.io/github/fortis/react-cent"><img src="https://coveralls.io/repos/github/fortis/react-cent/badge.svg" alt="coverage status"></a>
-  <a href="https://www.npmjs.com/package/react-cent"><img src="https://img.shields.io/npm/v/react-cent.svg" alt="npm version"></a>
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
   <a href="https://raw.githubusercontent.com/fortis/react-cent/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"/></a>
 </p>
 
 ## Installation
 
+To get the latest version, simply install the package using npm:
 ```sh
 npm install react-cent --save
 ```
@@ -102,8 +103,17 @@ const config = {
 * [Subscriptions](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#subscriptions)
 * [SockJS](https://fzambia.gitbooks.io/centrifugal/content/clients/javascript.html#sockjs)
 
+## Built With
+
+* [CentrifugeJS](https://github.com/centrifugal/centrifuge-js) - Javascript client to communicate with Centrifugo from web browser over Websockets or SockJS
+* [React](https://github.com/facebook/react) - A declarative, efficient, and flexible JavaScript library for building user interfaces.
+
 ## Building & Testing
 
 *  source can be loaded via [npm](https://www.npmjs.com/package/react-cent), or [downloaded](https://github.com/fortis/react-cent/archive/master.zip) from github repo.
 * `npm run build` to build
 * `npm test` to run tests
+
+## License
+
+`react-cent` is licensed under [The MIT License (MIT)](LICENSE).
