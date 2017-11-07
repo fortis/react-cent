@@ -11,6 +11,21 @@ Mail.ru Centrifuge integration component
   <a href="https://raw.githubusercontent.com/fortis/react-cent/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"/></a>
 </p>
 
+## Prerequisites
+
+Firstly you should run Centrifugo server.
+
+Start it with [Docker image](https://docker.com)
+```jsx harm
+ docker run --ulimit nofile=65536:65536 -p 8000:8000 centrifugo/centrifugo centrifugo --admin --web --insecure_admin
+```
+`--admin --web --insecure_admin` - used for development purposes to enable admin interface and skip password prompt.
+
+Open [http://localhost:8000](http://localhost:8000)
+![](https://pp.userapi.com/c841329/v841329697/36aaa/B7-bq-u3Fyw.jpg)
+
+For alternative installation methods and production usage see: [Install Centrifugo and quick start](https://fzambia.gitbooks.io/centrifugal/content/server/start.html). 
+
 ## Installation
 
 To get the latest version, simply install the package using npm:
