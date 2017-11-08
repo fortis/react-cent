@@ -25,7 +25,6 @@
     "centrifuge-js"
   ],
   "bundleDependencies": false,
-  "deprecated": false,
   "main": "dist/index.js",
   "scripts": {
     "build": "npm run clean && babel src --out-dir dist/",
