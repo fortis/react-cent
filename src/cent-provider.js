@@ -1,8 +1,8 @@
-import React, { Children } from 'react'
+import React, { Component, Children } from 'react'
 import PropTypes from 'prop-types'
 import Centrifuge from 'centrifuge'
 
-export default class CentProvider extends React.Component {
+export default class CentProvider extends Component {
   static propTypes = {
     children: PropTypes.element.isRequired,
     onConnect: PropTypes.func,

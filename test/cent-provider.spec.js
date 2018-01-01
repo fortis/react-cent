@@ -1,9 +1,9 @@
 /* global jest, it, describe, expect */
 
-jest.unmock('../src/CentProvider')
+jest.unmock('../src/cent-provider')
 import React from 'react'
 import PropTypes from 'prop-types'
-import CentProvider from '../src/CentProvider'
+import CentProvider from '../src/cent-provider'
 
 describe('CentProvider', () => {
   const config = {url: 'http://localhost:8000/connect', insecure: true}
