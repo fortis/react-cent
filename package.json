@@ -67,7 +67,7 @@
     "rimraf": "^2.6.2",
     "sinon": "^4.2.0",
     "standard": "^10.0.3",
-    "yargs": "^10.0.3"
+    "yargs": "^11.0.0"
   },
   "jest": {
     "unmockedModulePathPatterns": [
