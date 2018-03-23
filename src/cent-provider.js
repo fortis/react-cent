@@ -5,7 +5,7 @@ import Centrifuge from 'centrifuge'
 class CentManager extends Centrifuge {
   constructor (options) {
     super(options)
-    this.subscriptions = []
+    this.subscriptions = {}
   }
 
   subscribe(channel, events) {
