@@ -2,7 +2,7 @@
   "name": "react-cent",
   "homepage": "https://github.com/fortis/react-cent",
   "description": "React Component to make realtime apps with React simply. Provides integration with Centrifugo.",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "readme": "README.md",
   "author": {
     "name": "Alan Bondarchuk",
