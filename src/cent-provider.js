@@ -2,6 +2,28 @@ import React, { Component, Children } from 'react'
 import PropTypes from 'prop-types'
 import Centrifuge from 'centrifuge'
 
+class CentManager extends Centrifuge {
+  constructor (options) {
+    super(options)
+    this.subscriptions = []
+  }
+
+  subscribe(channel, events) {
+    this.subscriptions[channel] = super.subscribe(channel, events);
+
+    return this.subscriptions[channel]
+  }
+
+  getSubscription(channel) {
+    const sub = this.subscriptions[channel];
+    if (!sub) {
+      return null;
+    }
+
+    return sub;
+  }
+}
+
 export default class CentProvider extends Component {
   static propTypes = {
     children: PropTypes.element.isRequired,
@@ -25,7 +47,7 @@ export default class CentProvider extends Component {
 
   constructor (props, context) {
     super(props, context)
-    this.cent = new Centrifuge(this.props.config)
+    this.cent = new CentManager(this.props.config)
   }
 
   componentDidMount = () => {
