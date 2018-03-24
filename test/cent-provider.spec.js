@@ -15,7 +15,7 @@ describe('CentProvider', () => {
 
   it('should provide `cent` context', () => {
     const wrapper = new CentProvider({config})
-    expect(wrapper.getChildContext().cent.constructor.name).toBe('Centrifuge')
+    expect(wrapper.getChildContext().cent.constructor.name).toBe('CentManager')
     expect(CentProvider.childContextTypes.cent).toBe(PropTypes.object.isRequired)
   })
 
