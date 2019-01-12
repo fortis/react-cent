@@ -2,7 +2,7 @@ import React, { Component, Children } from 'react'
 import PropTypes from 'prop-types'
 import Centrifuge from 'centrifuge'
 
-class CentManager extends Centrifuge {
+class Manager extends Centrifuge {
   constructor (options) {
     super(options)
     this.subscriptions = {}
@@ -24,7 +24,7 @@ class CentManager extends Centrifuge {
   }
 }
 
-export default class CentProvider extends Component {
+export default class Provider extends Component {
   static propTypes = {
     children: PropTypes.element.isRequired,
     onConnect: PropTypes.func,
@@ -47,7 +47,7 @@ export default class CentProvider extends Component {
 
   constructor (props, context) {
     super(props, context)
-    this.cent = new CentManager(this.props.config)
+    this.cent = new Manager(this.props.config)
   }
 
   componentDidMount = () => {

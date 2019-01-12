@@ -1,2 +1,2 @@
-export { default as cent } from './cent-component'
-export { default as CentProvider } from './cent-provider'
+export { default as cent } from './component'
+export { default as CentProvider } from './provider'
