@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import Centrifuge from 'centrifuge'
 
 class Manager extends Centrifuge {
-  constructor (options) {
-    super(options)
+  constructor (...args) {
+    super(...args)
     this.subscriptions = {}
   }
 
@@ -28,8 +28,8 @@ export default class Provider extends Component {
   static propTypes = {
     children: PropTypes.element.isRequired,
     onConnect: PropTypes.func,
+    url: PropTypes.string.isRequired,
     config: PropTypes.shape({
-      url: PropTypes.string.isRequired,
       insecure: PropTypes.bool
     })
   }
@@ -45,9 +45,9 @@ export default class Provider extends Component {
     cent: PropTypes.object.isRequired
   }
 
-  constructor (props, context) {
-    super(props, context)
-    this.cent = new Manager(this.props.config)
+  constructor (props) {
+    super(props)
+    this.cent = new Manager(props.url, props.config)
   }
 
   componentDidMount = () => {
