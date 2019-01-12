@@ -54,7 +54,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
-    "centrifuge": "^1.4.6",
     "coveralls": "^3.0.0",
     "enzyme": "^3.1.0",
     "jest": "^22.0.0",
